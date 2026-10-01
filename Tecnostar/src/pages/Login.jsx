@@ -121,9 +121,7 @@ export default function LoginPage() {
                 Ainda não possui conta?
               </p>
 
-              <button className="mt-3 w-full border border-green-600 text-green-600 py-3 rounded-xl font-semibold hover:bg-green-50 transition">
-                Criar Conta
-              </button>
+              <Link className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition" to="/CriarConta">Criar conta</Link>
             </div>
 
             <div className="mt-8 text-center">

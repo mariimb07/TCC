@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export default function AdminDashboard() {
   return (
     <div className="min-h-screen flex bg-gray-100">
@@ -17,29 +18,28 @@ export default function AdminDashboard() {
         <nav className="p-4">
           <ul className="space-y-2">
             <li>
-              <Link
-                to="/admin"
+           <Link
+                to="/DashboardClinte"
                 className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-green-700 transition"
               >
-                📊 Dashboard
+                🥪 Plano alimentar
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/admin/usuarios"
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-green-700 transition"
-              >
-                👥 Usuários
-              </Link>
+                <Link 
+            
+            className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition" 
+             to='/PerfilUsuario'> 🧑‍💼 PerfilUsuario
+             </Link>
             </li>
 
             <li>
-              <Link
-                to="/admin/planos"
+         <Link
+                to="/PlanoAlimentar"
                 className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-green-700 transition"
               >
-                🥗 Planos Alimentares
+                🥪 Plano alimentar
               </Link>
             </li>
 
@@ -53,19 +53,27 @@ export default function AdminDashboard() {
             </li>
 
             <li>
-              <Link
-                to="/admin/acompanhamento"
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-green-700 transition"
-              >
-                📈 Acompanhamento Nutricional
-              </Link>
+               <Link 
+            
+            className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition" 
+             to='/AcompNutri'> 📈 acompanhamento 
+             </Link>
+            </li>
+
+             <li>
+             <Link 
+            
+            className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition" 
+             to='/imc'> 🧮 Cálculo do IMC
+             
+             </Link>
             </li>
           </ul>
         </nav>
 
         <div className="absolute bottom-0 w-72 p-4 border-t border-green-500">
           <button className="w-full bg-green-700 hover:bg-green-800 py-3 rounded-xl transition">
-            Sair
+            sair 
           </button>
         </div>
       </aside>
